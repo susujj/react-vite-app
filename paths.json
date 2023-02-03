@@ -1,0 +1,25 @@
+{
+
+  "compilerOptions": {
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": "./",
+
+    "paths": {
+
+      "@/*": [
+        "src/*"
+      ],
+      "@": [
+        "src/"
+      ],
+      "mainpath": [
+        "src/main"
+      ]
+
+    }
+
+  }
+
+}
+

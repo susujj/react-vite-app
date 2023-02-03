@@ -1,0 +1,59 @@
+{
+  // "extends": "./paths.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    // "target": "ESNext",
+    "target": "es5",
+    "typeRoots": [
+      "types",
+      "node_modules/@types"
+    ],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext",
+      "es7"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "./file",
+    // "emitDeclarationOnly": true,
+    "declarationMap": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": false,
+    "strict": false,
+    "noImplicitAny": false,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": false,
+    "importHelpers": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "mainpath/*": [
+        "src/main/*"
+      ]
+    },
+  },
+  "include": [
+    "src"
+, "src/main/test/TestUI.tsxI.tsx"  ],
+  "exclude": [
+    "src/lib" // 排除src目录下的lib文件夹下的文件不会编译
+  ],
+}
